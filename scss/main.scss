@@ -1,0 +1,64 @@
+$fontColor: #bfc2c5;
+$panelColor: #293949;
+$avatarColor: #1abc9c;
+
+body{
+  background: white;
+}
+
+#panel{
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  background: $panelColor;
+  color: $fontColor;
+  #account{
+    width:100%;
+    height:200px;
+    border-bottom: 1px solid $fontColor;
+    background: $avatarColor;
+    color: $panelColor;
+    position: relative;
+    #avatar{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 1px $panelColor solid;
+      border-radius: 100%;
+      width: 150px;
+      height: 150px;
+      background: url('../img/avatar.jpg') no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  #menu{
+    width:100%;
+    height: auto;
+    ul{
+      padding: 0;
+      width: 100%;
+      list-style: none;
+      li{
+        width: 100%;
+        padding: 20px 40px;
+        font-size: 15px;
+        cursor: pointer;
+        i{
+          position: absolute;
+          left: 15px;
+        }
+        &:hover{
+          background: #1c2733;
+        }
+      }
+      hr{
+        width: 100%;
+        margin: 0;
+      }
+
+    }
+  }
+}
