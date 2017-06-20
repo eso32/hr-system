@@ -1,18 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass|Source+Sans+Pro');
+
 $fontColor: #bfc2c5;
 $panelColor: #293949;
 $avatarColor: #1abc9c;
 
 body{
+  margin: 0;
   background: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Overpass', sans-serif;
 }
 
 #panel{
-  width: 300px;
+  width: 20%;
+  min-width: 250px;
+  max-width: 400px;
   height: 100%;
   position: fixed;
   left: 0;
   background: $panelColor;
   color: $fontColor;
+  box-shadow: 3px 0px 10px $panelColor;
   #account{
     width:100%;
     height:200px;
@@ -24,14 +32,20 @@ body{
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
-      border: 1px $panelColor solid;
+      transform: translate(-50%, -60%);
       border-radius: 100%;
       width: 150px;
       height: 150px;
       background: url('../img/avatar.jpg') no-repeat;
-      background-position: center;
+      background-position: 50% 0%;
       background-size: cover;
+    }
+    span{
+      position: absolute;
+      bottom: 5px;
+      font-size: 20px;
+      width: 100%;
+      text-align: center;
     }
   }
   #menu{
@@ -58,7 +72,21 @@ body{
         width: 100%;
         margin: 0;
       }
-
     }
+  }
+}
+
+#cockpit{
+  width: 80%;
+  height: 100%;
+  // background: lightblue;
+  margin-left: 20%;
+  padding: 20px;
+  .component{
+    background: $panelColor;
+    width:300px;
+    height: 300px;
+    float: left;
+    margin: 5px;
   }
 }
