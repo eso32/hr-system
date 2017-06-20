@@ -1,5 +1,5 @@
  <!DOCTYPE html>
- <html lang="en">
+ <html lang="en" ng-app="hrsystem">
 
 <head>
      <meta charset="UTF-8">
@@ -14,6 +14,8 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.js"></script>
      <script src="js/app.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+     <script src="js/angular-chart.js"></script>
  </head>
 
  <body>
@@ -24,24 +26,19 @@
     </div>
     <div id="menu">
       <ul>
-        <li><i class="fa fa-tachometer" aria-hidden="true"></i>DASHBOARD</li></i><hr/>
-        <li><i class="fa fa-address-book" aria-hidden="true"></i>EMPLOYEES</li><hr/>
-        <li><i class="fa fa-handshake-o" aria-hidden="true"></i>JOBS</li><hr/>
-        <li><i class="fa fa-thermometer-three-quarters" aria-hidden="true"></i>HOLIDAY</li><hr/>
-        <li><i class="fa fa-id-card-o" aria-hidden="true"></i>ATTENDANCE</li><hr/>
+        <a href="#!/"><li><i class="fa fa-tachometer" aria-hidden="true"></i>DASHBOARD</li></a><hr/>
+
+        <a href="#!/employees"><li><i class="fa fa-address-book" aria-hidden="true"></i>EMPLOYEES</li></a><hr/>
+        <a href="#!/jobs"><li><i class="fa fa-handshake-o" aria-hidden="true"></i>JOBS</li></a><hr/>
+        <a href="#!/holiday"><li><i class="fa fa-thermometer-three-quarters" aria-hidden="true"></i>HOLIDAY</li></a><hr/>
+        <a href="#!/attendance"><li><i class="fa fa-id-card-o" aria-hidden="true"></i>ATTENDANCE</li></a><hr/>
       </ul>
     </div>
   </div>
   <div id="cockpit">
-    <div>
-      <div class="component">KOMPONENT</div>
-      <div class="component">KOMPONENT</div>
-      <div class="component">KOMPONENT</div>
-      <div class="component">KOMPONENT</div>
-      <div class="component">KOMPONENT</div>
-      <div class="component">KOMPONENT</div>
-    </div>
+  <div ng-view></div>
   </div>
+
 
  </body>
 

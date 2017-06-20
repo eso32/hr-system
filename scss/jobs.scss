@@ -1,0 +1,31 @@
+#jobs{
+  padding:20px;
+  div.job-offer{
+    padding: 20px;
+    background: #eee;
+    width: 100%;
+    box-shadow: 1px 0px 10px #293949;
+    margin-bottom: 20px;
+    position: relative;
+    h2{
+      margin:0;
+      text-decoration: underline;
+    }
+    span{
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    ul{
+      margin-top: 20px;
+      list-style: none;
+      padding: 0;
+      li{
+        &:hover{
+          cursor: pointer;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
