@@ -1,3 +1,77 @@
-<div id="holidays">
-  <img src="img/construct.jpg" />
+<div id="attendance">
+  <div class="row">
+    <div class="col-sm-4">
+      Global attendance:
+
+        <canvas class="chart chart-bar" chart-data="cp1.data" chart-labels="cp1.cities"
+      	chart-series="cp1.try" chart-click="onClick" chart-colors="cp1.colors" width="280" height="280"></canvas>
+    </div>
+    <div class="col-sm-4">
+      Global absence:
+      <canvas class="chart chart-line" chart-data="cp2.data" chart-labels="cp2.cities"
+      chart-series="cp2.try" chart-click="onClick" chart-colors="cp2.colors" width="280" height="280"></canvas>
+    </div>
+    <div class="col-sm-4">
+      Issues reported by employees:
+      <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Ticket no.</th>
+              <th>Issue</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="" data-toggle="tooltip" data-placement="top" title="Issued on June 10, 2017">A1928-1</a></td>
+              <td>Access card doesn't work</td>
+            </tr>
+            <tr>
+              <td><a href="" data-toggle="tooltip" data-placement="top" title="Issued on May 2, 2017">B1919-7</a></td>
+              <td>Plan change for fitness</td>
+            </tr>
+            <tr>
+              <td><a href="" data-toggle="tooltip" data-placement="top" title="Issued on April 22, 2017">A1902-4</a></td>
+              <td>How to get cost refunds</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>
+<div class="row">
+  <h2>Absence to clarify:</h2>
+  <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+          <th>Department</th>
+          <th>Absent</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>john@example.com</td>
+          <td>Project Management</td>
+          <td>Today</td>
+        </tr>
+        <tr>
+          <td>Mary</td>
+          <td>Moe</td>
+          <td>mary@example.com</td>
+          <td>Engineering</td>
+          <td>2 days ago</td>
+        </tr>
+        <tr>
+          <td>July</td>
+          <td>Dooley</td>
+          <td>july@example.com</td>
+          <td>Human Resource</td>
+          <td>June 10, 2017</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
 </div>

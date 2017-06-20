@@ -54,6 +54,7 @@ gulp.task('watch', function(){
   gulp.watch(src_js, ['js']);
   gulp.watch(src_sass, ['sass']);
   gulp.watch('*.html').on('change', browserSync.reload);
+  gulp.watch('js/templates/*.html').on('change', browserSync.reload);
 });
 
 

@@ -1,4 +1,4 @@
-<div id="employees"><i class="fa fa-search" aria-hidden="true"></i><input type="text" placeholder="ex. John Smith"/></div>
+<div id="employees"><i class="fa fa-search" aria-hidden="true"></i><input type="text" ng-model="globalSearch"  placeholder="ex. John Smith"/></div>
 <table class="table table-striped">
     <thead>
       <tr>
@@ -9,23 +9,11 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>John</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
-        <td>Project Management</td>
-      </tr>
-      <tr>
-        <td>Mary</td>
-        <td>Moe</td>
-        <td>mary@example.com</td>
-        <td>Engineering</td>
-      </tr>
-      <tr>
-        <td>July</td>
-        <td>Dooley</td>
-        <td>july@example.com</td>
-        <td>Human Resource</td>
+      <tr ng-repeat="employee in employees | filter: globalSearch">
+        <td>{{employee.name}}</td>
+        <td>{{employee.lastname}}</td>
+        <td>{{employee.mail}}</td>
+        <td>{{employee.dep}}</td>
       </tr>
     </tbody>
   </table>
