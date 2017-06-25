@@ -1,10 +1,22 @@
 #holidays{
   position: relative;
   height: 500px;
+  text-align: left;
   img{
     position: absolute;
+    width: 200px;
+    height: auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    animation: round3 2s infinite ease;
+    transform-origin: center center;
+  }
+}
+@keyframes round3 {
+  50% {
+    width: 300px;
+    height: auto;
+    // transform: rotate(180deg);
   }
 }

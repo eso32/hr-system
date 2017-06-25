@@ -6,7 +6,7 @@
      <title>TITLE</title>
      <meta name="description" content="DESCRIPTION">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="dist/app.min.css">
+    <link rel="stylesheet" href="dist/main.css">
     <link rel="stylesheet" href="font/css/font-awesome.min.css">
      <!--[if lt IE 9]>
        <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -22,7 +22,6 @@
     <div id="menu">
       <ul>
         <a href="#!/"><li><i class="fa fa-tachometer" aria-hidden="true"></i>DASHBOARD</li></a><hr/>
-
         <a href="#!/employees"><li><i class="fa fa-address-book" aria-hidden="true"></i>EMPLOYEES</li></a><hr/>
         <a href="#!/jobs"><li><i class="fa fa-handshake-o" aria-hidden="true"></i>JOBS</li></a><hr/>
         <a href="#!/holiday"><li><i class="fa fa-thermometer-three-quarters" aria-hidden="true"></i>HOLIDAY</li></a><hr/>
@@ -31,12 +30,15 @@
     </div>
   </div>
   <div id="cockpit">
-  <div ng-view></div>
+    <div class="pageTemplate">
+      <div class="lol" ng-view></div>
+    </div>
   </div>
 
   <!-- VENDORS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-animate.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
   <script src="js/angular-chart.js"></script>
 
@@ -47,7 +49,7 @@
   <script src="js/controllers/attendance.js"></script>
   <script src="js/controllers/employees.js"></script>
   <!-- SERVICE -->
-  <!-- <script src="js/services/fetchData.js"></script> -->
+  <script src="js/services/fetchEmployees.js"></script>
 
  </body>
 

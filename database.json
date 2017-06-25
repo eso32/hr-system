@@ -1,11 +1,104 @@
-[{
-	"name": "John",
-	"lastname": "Doe",
-	"mail": "joh@dep.com",
-	"dep": "PM"
-}, {
-	"name": "Steva",
-	"lastname": "Dunkin",
-	"mail": "s.dunkin@dep.com",
-	"dep": "Engineering"
-}]
+[
+   {
+      "name": "Tsmasz",
+      "lastname": "DIxk",
+      "mail": "joh@dep.com",
+      "dep": "PM"
+   },
+   {
+      "name": "Steva",
+      "lastname": "Dunkin",
+      "mail": "s.dunkin@dep.com",
+      "dep": "Engineering"
+   },
+   {
+      "name": "Emil",
+      "lastname": "Smith",
+      "mail": "e.smith@dep.com",
+      "dep": "Engineering"
+   },
+   {
+      "name": "Bob",
+      "lastname": "Cary",
+      "mail": "b.cary@dep.com",
+      "dep": "Engineering"
+   },
+   {
+      "name": "Anett",
+      "lastname": "Trebiem",
+      "mail": "a.trebiem@dep.com",
+      "dep": "PM"
+   },
+   {
+      "name": "Rob",
+      "lastname": "Meni",
+      "mail": "r.meni@dep.com",
+      "dep": "HR"
+   },
+   {
+      "name": "Kate",
+      "lastname": "Dubmble",
+      "mail": "k.dubmle@dep.com",
+      "dep": "HR"
+   },
+   {
+      "name": "Ian",
+      "lastname": "McCormac",
+      "mail": "i.mccormac@dep.com",
+      "dep": "Support"
+   },
+   {
+      "name": "Gregor",
+      "lastname": "Dubmble",
+      "mail": "g.dubmle@dep.com",
+      "dep": "HR"
+   },
+   {
+      "name": "Bill",
+      "lastname": "Dubmble",
+      "mail": "b.dubmle@dep.com",
+      "dep": "Engineering"
+   },
+   {
+      "name": "Bob",
+      "lastname": "Fenster",
+      "mail": "b.fenster@dep.com",
+      "dep": "IT"
+   },
+   {
+      "name": "Lucas",
+      "lastname": "Wysocky",
+      "mail": "l.wysocky@dep.com",
+      "dep": "IT"
+   },
+   {
+      "name": "Hillary",
+      "lastname": "Jungerston",
+      "mail": "h.jungerston@dep.com",
+      "dep": "Administration"
+   },
+   {
+      "name": "Katarzyna",
+      "lastname": "Sleba",
+      "mail": "k.sleba@dep.com",
+      "dep": "IT"
+   },
+   {
+      "name": "Fiona",
+      "lastname": "Newmark",
+      "mail": "f.newmark@dep.com",
+      "dep": "PM"
+   },
+   {
+      "name": "Jessica",
+      "lastname": "Smith",
+      "mail": "j.smith@dep.com",
+      "dep": "PM"
+   },
+   {
+      "name": "Hans",
+      "lastname": "Forth",
+      "mail": "h.forth@dep.com",
+      "dep": "PM"
+   }
+]

@@ -1,4 +1,4 @@
-var app = angular.module('hrsystem', ['ngRoute', 'chart.js']);
+var app = angular.module('hrsystem', ['ngRoute', 'chart.js', 'ngAnimate']);
 
 app.config(['ChartJsProvider', function (ChartJsProvider) {
     // Configure all charts

@@ -6,14 +6,14 @@ app.controller('dashboardCtrl', ['$scope', '$timeout', function ($scope, $timeou
     data: [[65, 59, 80, 81, 56, 55, 40],[28, 48, 40, 19, 86, 27, 90]]
   };
   $scope.cp2 = {
-    cities: ["January", "February", "March", "April", "May", "June", "July"],
-    try: ['V 2017', 'VI 2017'],
+    cities: ["January", "February", "March", "April", "May", "June"],
+    try: ['2016', '2017'],
     colors: ['#45b7cd', '#ff6384', '#ff8e72'],
-    data: [[65, 59, 80, 81, 56, 55, 40],[28, 48, 40, 19, 86, 27, 90]]
+    data: [[65, 59, 80, 81, 56, 55],[28, 48, 40, 19, 86, 27]]
   };
   $scope.cp3 = {
     cities: ["January", "February", "March", "April", "May", "June", "July"],
-    try: ['V 2017', 'VI 2017'],
+    try: ['2016', '2017'],
     colors: ['#45b7cd', '#ff6384', '#ff8e72'],
     data: [[65, 59, 80, 81, 56, 55, 40],[28, 48, 40, 19, 86, 27, 90]],
     datasetOverride: [

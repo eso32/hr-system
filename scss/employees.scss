@@ -1,10 +1,33 @@
 #employees{
+  text-align: left;
   i{
     margin-right: 20px;
     font-size: 30px;
+    vertical-align: middle;
   }
   input{
     height: 50px;
     font-size: 30px;
+    vertical-align: middle;
+  }
+  table{
+    margin-top: 30px;
+    width: 100%;
+  }
+  span{
+    position: absolute;
+    top:10px;
+    right: 20px;
+  }
+  button{
+    background: $avatarColor;
+    box-shadow: 0px 0px 5px $panelColor;
+    height: 50px;
+    border: none;
+    transition: background 0.3s linear 0s;
+    vertical-align: middle;
+    &:hover{
+      background: $avatarColorDark;
+    }
   }
 }

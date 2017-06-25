@@ -15,7 +15,7 @@ var dist_js = 'dist/';
 var dist_css = 'dist/';
 var dist_img = 'dist/img';
 
-var src_sass = 'scss/**/*.scss';
+var src_sass = 'scss/**/main.scss';
 var src_js = 'js/**/*.js';
 var src_img = 'img/*';
 
@@ -25,7 +25,7 @@ gulp.task('sass', function () {
     .on('error', sass.logError)
     .pipe(plumber())
     .pipe(autoprefixer('last 50 versions'))
-    .pipe(concat('app.min.css'))
+    // .pipe(concat('app.min.css'))
     .pipe(minify_css())
     .pipe(gulp.dest(dist_css))
     .pipe(notify({message: 'Sass saved! Reloading...'}))
@@ -52,7 +52,7 @@ gulp.task('watch', function(){
     proxy: 'tomek-u36sg/hr-system/'
   });
   gulp.watch(src_js, ['js']);
-  gulp.watch(src_sass, ['sass']);
+  gulp.watch('scss/**/*.scss', ['sass']);
   gulp.watch('*.html').on('change', browserSync.reload);
   gulp.watch('js/templates/*.html').on('change', browserSync.reload);
 });

@@ -1,13 +1,6 @@
-<div>
   <div class="component">
     <canvas class="chart chart-bar" chart-data="cp1.data" chart-labels="cp1.cities"
   	chart-series="cp1.try" chart-click="onClick" chart-colors="cp1.colors" width="280" height="280"></canvas>
-  </div>
-  <div class="componentLong">
-    <canvas id="base" class="chart-bar"
-    chart-data="cp3.data" chart-labels="cp3.cities" chart-colors="cp3.colors"
-    chart-dataset-override="cp3.datasetOverride" width="600" height="280">
-  </canvas>
   </div>
   <div class="component">
     <canvas class="chart chart-line" chart-data="cp2.data" chart-labels="cp2.cities"
@@ -18,7 +11,26 @@
     <canvas width="220" height="220" id="base" class="chart-base" chart-type="cp4.type"
     chart-data="cp4.data" chart-labels="cp4.labels" >
     </canvas>
-    <button ng-click="cp4.toggle()">Toggle</button>
+    <button class="btn" ng-click="cp4.toggle()">Toggle</button>
   </div>
-  <div class="component">To do list</div>
-</div>
+  <div class="component">
+    <h2>Sprint F:</h2>
+    <ul>
+      <li>New form for HR db</li>
+      <li>Update hr dba</li>
+      <li>Send requiremants for new card access system</li>
+    </ul>
+    Upcoming sprints:
+    <h2 class="upcoming">Sprint G:</h2>
+    <ul class="upcoming">
+      <li>Party preparation fo 20th anniversary</li>
+      <li>Create a workshop for new employees</li>
+    </ul>
+
+  </div>
+  <div class="componentLong">
+    <canvas id="base" class="chart-bar"
+    chart-data="cp3.data" chart-labels="cp3.cities" chart-colors="cp3.colors"
+    chart-dataset-override="cp3.datasetOverride" width="600" height="280">
+  </canvas>
+  </div>
