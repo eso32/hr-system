@@ -3,96 +3,26 @@
 
 <head>
      <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>TITLE</title>
      <meta name="description" content="DESCRIPTION">
+     <link rel="stylesheet" href="dist/start.css">
      <!--[if lt IE 9]>
        <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
      <![endif]-->
-  <style media="screen">
-    @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-    body {
-      margin: 0;
-      padding: 0;
-      /*  Background fallback in case of IE8 & down, or in case video doens't load, such as with slower connections  */
-      background: #333;
-      background-attachment: fixed;
-      background-size: cover;
-    }
-
-    /* The only rule that matters */
-    #video-background {
-      /*  making the video fullscreen  */
-      position: fixed;
-      right: 0;
-      bottom: 0;
-      min-width: 100%;
-      min-height: 100%;
-      width: auto;
-      height: auto;
-      z-index: -100;
-    }
-
-    /* These just style the content */
-    article {
-      /*  just a fancy border  */
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 300px;
-      height: auto;
-      padding: 10px;
-      padding-top: 30px;
-      transform: translate(-50%,-50%);
-      border: 10px solid rgba(255, 255, 255, 0.5);
-      font-family: 'Open Sans', sans-serif;
-      background: rgba(255, 255, 255, 0.3);
-    }
-    article span{
-      width: 110px;
-      display: inline-block;
-      padding: 0;
-      margin: 0;
-      text-align: center;
-    }
-    article input{
-      width: 170px;
-      display: inline-block;
-      padding: 0;
-      margin: 0;
-      height: 30px;
-      margin-bottom: 20px;
-    }
-    button{
-      width: 174px;
-      float: right;
-      margin-right: 15px;
-      height: 34px;
-      padding: 0;
-      background: rgba(255, 255, 255, 0.6);
-    }
-    .logo{
-      position: absolute;
-      top: 20px;
-      left: 0;
-      right: 0;
-      text-align: center;
-      opacity: 0.5;
-    }
-  </style>
  </head>
  <body>
    <div class="logo">
      <img src="img/hr_logo.png" alt="" />
    </div>
    <article>
-     <span>Login:</span><input type="text" /> <br />
-     <span>Password:</span><input type="text" />
-     <button type="button" name="button">Log in</button>
+     <span>Login:</span><input type="text" disabled/> <br />
+     <span>Password:</span><input type="text" disabled/>
+     <button type="button" name="button" onclick="window.location.assign('index.html')">Try demo</button>
    </article>
 
    <video autoplay loop id="video-background" muted plays-inline>
      <source src="img/bg.mp4" type="video/mp4">
    </video>
  </body>
-
  </html>

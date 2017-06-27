@@ -1,42 +1,35 @@
 <div id="jobs">
-  <div class="job-offer">
-    <h2>Project controller</h2>
-    <span>Posted on Jun 10, 2017 14:32</span>
-    <span class="remaining">Finished</span>
-    <ul>
-      <li>Job description</li>
-      <li>Candidates</li>
-      <li>Hiring for <b>Joh Smith</b></li>
-    </ul>
-  </div>
-  <div class="job-offer">
-    <h2>Front-end developer</h2>
-    <span>Posted on Jun 10, 2017 14:32</span>
-    <span class="remaining">5 days remaining</span>
-    <ul>
-      <li>Job description</li>
-      <li>Candidates</li>
-      <li>Hiring for <b>Joh Smith</b></li>
-    </ul>
-  </div>
-  <div class="job-offer">
-  <h2>Project manager</h2>
-    <span>Posted on Jun 10, 2017 14:32</span>
-    <span class="remaining">7 days remaining</span>
-    <ul>
-      <li>Job description</li>
-      <li>Candidates</li>
-      <li>Hiring for <b>Joh Smith</b></li>
-    </ul>
-  </div>
-  <div class="job-offer">
-    <h2>Project manager</h2>
-    <span>Posted on Jun 10, 2017 14:32</span>
-    <span class="remaining">23 days remaining</span>
-    <ul>
-      <li>Job description</li>
-      <li>Candidates</li>
-      <li>Hiring for <b>Joh Smith</b></li>
-    </ul>
+  <div class="job-offer" ng-repeat="job in jobs">
+    <h2>{{job.name}}</h2>
+    <span class="hide650">Posted on {{job.posted}}</span>
+    <div class="row">
+      <div class="col-sm-4">
+        <ul>
+          <li>Job description</li>
+          <li>Candidates</li>
+          <li>Hiring for <b>{{job.hiringFor}}</b></li>
+        </ul>
+      </div>
+      <div class="col-sm-4 remaining">
+        {{job.candidates}} candidates
+      </div>
+      <div class="col-sm-4 remaining">
+        {{job.remaining}} days remaining
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3 paddingJob">
+        <img src="img/pracuj.png" ng-class="job.pracuj ? '' : 'notposted'">
+      </div>
+      <div class="col-sm-3 paddingJob">
+        <img src="img/praca.png" class="pracapl" ng-class="job.praca ? '' : 'notposted'">
+      </div>
+      <div class="col-sm-3 paddingJob">
+        <img src="img/goldenline.png" class="goldenline" ng-class="job.golden ? '' : 'notposted'">
+      </div>
+      <div class="col-sm-3 paddingJob">
+        <img src="img/linkedin.png" class="linkedin" ng-class="job.linked ? '' : 'notposted'">
+      </div>
+    </div>
   </div>
 </div>

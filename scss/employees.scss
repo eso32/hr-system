@@ -1,23 +1,17 @@
 #employees{
+  min-width: 250px;
+  padding-top: 30px;
   text-align: left;
   i{
-    margin-right: 20px;
     font-size: 30px;
     vertical-align: middle;
+    width: 10%;
   }
   input{
     height: 50px;
     font-size: 30px;
     vertical-align: middle;
-  }
-  table{
-    margin-top: 30px;
-    width: 100%;
-  }
-  span{
-    position: absolute;
-    top:10px;
-    right: 20px;
+    width: 60%;
   }
   button{
     background: $avatarColor;
@@ -26,8 +20,33 @@
     border: none;
     transition: background 0.3s linear 0s;
     vertical-align: middle;
+    width: 25%;
     &:hover{
       background: $avatarColorDark;
+    }
+  }
+
+  table{
+    margin-top: 30px;
+    width: 100%;
+    background: white;
+    box-shadow: 0px 0px 3px #293949;
+    border-radius: 3px;
+  }
+  span{
+    position: absolute;
+    top:10px;
+    right: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  div.col-md-6.col-sm-12{
+    i.fa.fa-search{
+      display: none;
+    }
+    input{
+      width: 70%;
     }
   }
 }

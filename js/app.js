@@ -38,10 +38,6 @@ app.controller('attCtrl', function($scope){
 
 });
 
-app.controller('jobsCtrl', function($scope){
-
-});
-
 app.controller('holidayCtrl', function($scope){
 
 });

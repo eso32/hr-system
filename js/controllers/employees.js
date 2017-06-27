@@ -1,9 +1,4 @@
-app.controller('emploCtrl', function($scope, $http, fetchEmployees){
-  // fetchEmployees.then(function(response) {
-  //   $scope.employees = response.data;
-  // }).catch(function(data, status) {
-  //   console.error('Error', response.status, response.data);
-  // });
+app.controller('emploCtrl', function($scope, $http){
   $scope.getData = function(){
       document.getElementById('indicator').innerHTML = "Refreshing data... Wait...";
       return $http({

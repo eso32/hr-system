@@ -1,36 +1,39 @@
-  <div class="component">
-    <canvas class="chart chart-bar" chart-data="cp1.data" chart-labels="cp1.cities"
-  	chart-series="cp1.try" chart-click="onClick" chart-colors="cp1.colors" width="280" height="280"></canvas>
+  <div class="col-sm-6 col-md-4">
+    <div class="comp">
+      <h2>Candidates / job offer</h2>
+      <canvas chart-options="options" class="chart chart-bar" chart-data="cp1.data" chart-labels="cp1.cities"
+      chart-series="cp1.try" chart-click="onClick" chart-colors="cp1.colors" width="280" height="280"></canvas>
+    </div>
   </div>
-  <div class="component">
-    <canvas class="chart chart-line" chart-data="cp2.data" chart-labels="cp2.cities"
-    chart-series="cp2.try" chart-click="onClick" chart-colors="cp2.colors" width="280" height="280"></canvas>
+  <div class="col-sm-6 col-md-4">
+    <div class="comp">
+      <h2>Sick day / month </h2>
+      <canvas chart-options="options" class="chart chart-line" chart-data="cp2.data" chart-labels="cp2.cities"
+      chart-series="cp2.try" chart-click="onClick" chart-colors="cp2.colors" width="280" height="280"></canvas>
+    </div>
   </div>
 
-  <div class="component">
-    <canvas width="220" height="220" id="base" class="chart-base" chart-type="cp4.type"
-    chart-data="cp4.data" chart-labels="cp4.labels" >
-    </canvas>
-    <button class="btn" ng-click="cp4.toggle()">Toggle</button>
+  <div class="col-sm-6 col-md-4">
+    <div class="comp">
+      <h2>Employees in departments</h2>
+      <canvas chart-options="cp4.options" width="220" height="220" id="base" class="chart-base" chart-type="cp4.type"
+      chart-data="cp4.data" chart-labels="cp4.labels" chart-colors="cp4.colors" >
+      </canvas>
+      <button class="btn" ng-click="cp4.toggle()">Toggle</button>
+    </div>
   </div>
-  <div class="component">
-    <h2>Sprint F:</h2>
-    <ul>
-      <li>New form for HR db</li>
-      <li>Update hr dba</li>
-      <li>Send requiremants for new card access system</li>
-    </ul>
-    Upcoming sprints:
-    <h2 class="upcoming">Sprint G:</h2>
-    <ul class="upcoming">
-      <li>Party preparation fo 20th anniversary</li>
-      <li>Create a workshop for new employees</li>
-    </ul>
+  <div class="col-sm-6 col-md-4">
+    <div class="comp textarea">
+      <textarea placeholder="Anything to write down?" draggable="false"></textarea>
+    </div>
+  </div>
 
-  </div>
-  <div class="componentLong">
-    <canvas id="base" class="chart-bar"
-    chart-data="cp3.data" chart-labels="cp3.cities" chart-colors="cp3.colors"
-    chart-dataset-override="cp3.datasetOverride" width="600" height="280">
-  </canvas>
+  <div class="col-sm-12 col-md-8">
+    <div class="comp">
+      <h2>Number of employees in years</h2>
+      <canvas chart-options="options" id="base" class="chart-bar"
+      chart-data="cp3.data" chart-labels="cp3.cities" chart-colors="cp3.colors"
+      chart-dataset-override="cp3.datasetOverride" width="600" height="280">
+      </canvas>
+    </div>
   </div>

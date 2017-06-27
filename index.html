@@ -3,18 +3,34 @@
 
 <head>
      <meta charset="UTF-8">
-     <title>TITLE</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>HRsystem</title>
      <meta name="description" content="DESCRIPTION">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="dist/main.css">
     <link rel="stylesheet" href="font/css/font-awesome.min.css">
+
      <!--[if lt IE 9]>
        <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
      <![endif]-->
  </head>
 
  <body>
+  <div id="loadScreen">
+    <div id="loading"></div>
+  </div>
   <div id="panel">
+    <div id="menu-toggle">
+      <div id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div id="cross">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
     <div id="account">
       <div id="avatar"></div>
       <span>Tomasz Szłapa</span>
@@ -34,13 +50,42 @@
       <div class="lol" ng-view></div>
     </div>
   </div>
-
   <!-- VENDORS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-animate.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
   <script src="js/angular-chart.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <script>
+  $( window ).resize(function(){
+    if($(this).width() > 768){
+      $('#panel').css('left', '0px');
+    } else {
+      $('#panel').css('left', '-200px');
+    }
+  });
+  $('#menu-toggle').click(function (){
+      // $(this).toggleClass('open');
+      if($('#panel').css('left') === '-200px'){
+        $('#panel').css('left', '0px');
+        $('#menu-toggle').addClass('open');
+      } else{
+        $('#panel').css('left', '-200px');
+        $('#menu-toggle').removeClass('open');
+      }
+    });
+  </script>
+  <script>
+  window.addEventListener("load", function(){
+  	var load_screen = document.getElementById("loadScreen");
+  	document.body.removeChild(load_screen);
+    document.body.style.overflow = "visible";
+  });
+  </script>
 
   <!-- MODULES -->
   <script src="js/app.js"></script>
@@ -48,8 +93,9 @@
   <script src="js/controllers/dashboard.js"></script>
   <script src="js/controllers/attendance.js"></script>
   <script src="js/controllers/employees.js"></script>
+  <script src="js/controllers/jobs.js"></script>
   <!-- SERVICE -->
-  <script src="js/services/fetchEmployees.js"></script>
+  <script src="js/services/fetchJobs.js"></script>
 
  </body>
 

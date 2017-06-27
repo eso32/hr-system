@@ -1,0 +1,35 @@
+[
+   {
+      "name": "Project Controller",
+      "hiringFor": "Joh Smith",
+      "candidates": 6,
+      "remaining": 5,
+      "pracuj": true,
+      "praca": false,
+      "golden": true,
+      "linked": true,
+      "posted": "Jun 10, 2017 14:37"
+   },
+   {
+      "name": "Front End Developer",
+      "hiringFor": "Agnes Burgen",
+      "candidates": 2,
+      "remaining": 12,
+      "pracuj": false,
+      "praca": true,
+      "golden": true,
+      "linked": true,
+      "posted": "Jun 2, 2017 12:23"
+   },
+   {
+      "name": "Project Manager",
+      "hiringFor": "Bob McMilan",
+      "candidates": 4,
+      "remaining": 20,
+      "pracuj": true,
+      "praca": false,
+      "golden": false,
+      "linked": true,
+      "posted": "May 22, 2017 13:34"
+   }
+]

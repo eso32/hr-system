@@ -1,38 +1,78 @@
 #jobs{
   padding:20px;
   text-align: left;
+  min-width: 220px;
   div.job-offer{
+    border-radius: 3px;
     padding: 20px;
-    background: #eee;
+    background: #fff;
     width: 100%;
     box-shadow: 1px 0px 10px #293949;
     margin-bottom: 20px;
     position: relative;
+    .paddingJob{
+      text-align: center;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      img{
+        width: 80%;
+        height: auto;
+      }
+      .pracapl{
+        transform: scale(0.7);
+        margin-top: -10px;
+      }
+      .goldenline{
+        width: 95%
+      }
+      .linkedin{
+        width: 90%;
+      }
+      .notposted{
+        filter: grayscale(100%);
+        opacity: 0.3;
+      }
+    }
     h2{
       margin:0;
-      text-decoration: underline;
     }
     span{
       position: absolute;
       top: 20px;
       right: 20px;
     }
-    span.remaining{
-      position: absolute;
-      bottom: 20px;
-      top: auto;
-      right: 20px;
-      font-size: 30px;
+    div.remaining{
+      text-align: left;
+      font-size: 25px;
+      margin-top: 10px;
+      padding-top: 20px;
+      // border-left: 1px solid grey;
+      padding-bottom: 20px;
+      margin-bottom: 10px;
     }
     ul{
-      margin-top: 20px;
       list-style: none;
       padding: 0;
+      padding-top: 20px;
+      display: inline-block;
+      text-align: left;
       li{
         &:hover{
           cursor: pointer;
           text-decoration: underline;
         }
+      }
+    }
+  }
+  @media screen and (max-width: 650px){
+    div.job-offer{
+      span.hide650{
+        display: none;
+      }
+      span.remaining{
+        font-size: 15px;
+        bottom: 5px;
+        right: 5px;
       }
     }
   }

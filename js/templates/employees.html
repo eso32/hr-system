@@ -1,22 +1,28 @@
-<div id="employees"><i class="fa fa-search" aria-hidden="true"></i><input type="text" ng-model="globalSearch"  placeholder="ex. John Smith"/>
-<span id="indicator">Data loaded on 11:38</span>
-<button ng-click="getData()">Refresh data</button>
-<table class="table table-striped">
-    <thead>
-      <tr>
-        <th>Firstname</th>
-        <th>Lastname</th>
-        <th>Email</th>
-        <th>Department</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr ng-repeat="employee in employees | filter: globalSearch">
-        <td>{{employee.name}}</td>
-        <td>{{employee.lastname}}</td>
-        <td>{{employee.mail}}</td>
-        <td>{{employee.dep}}</td>
-      </tr>
-    </tbody>
-  </table>
+<div id="employees">
+  <div class="row">
+    <div class="col-md-6 col-sm-12">
+      <i class="fa fa-search" aria-hidden="true"></i>
+      <input type="text" ng-model="globalSearch"  placeholder="ex. John Smith"/>
+      <button ng-click="getData()">Refresh data</button>
+    </div>
+    <span id="indicator">Data loaded on 11:38</span>
+  </div>
+  <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+          <th>Department</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="employee in employees | filter: globalSearch">
+          <td>{{employee.name}}</td>
+          <td>{{employee.lastname}}</td>
+          <td>{{employee.mail}}</td>
+          <td>{{employee.dep}}</td>
+        </tr>
+      </tbody>
+    </table>
 </div>
